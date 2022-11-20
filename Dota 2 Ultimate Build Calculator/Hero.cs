@@ -10,6 +10,8 @@ namespace Dota_2_Ultimate_Build_Calculator
     {
         private string name;
         private Image img;
+        public static int[] melee = new int[] { 76, 115, 32, 73, 84, 66 };
+        public static int[] magic = new int[] { 76, 96, 122, 79, 47, 50, 40, 112, 89, 98, 42, 84, 24, 44, 83 };
 
         public Hero(string name)
         {
@@ -22,7 +24,8 @@ namespace Dota_2_Ultimate_Build_Calculator
         {
             return img;
         }
-        private void set_img(string name)
+
+        public static int get_num(string name)
         {
             int num = 0;
 
@@ -31,373 +34,378 @@ namespace Dota_2_Ultimate_Build_Calculator
                 case "Abaddon":
                     num = 0;
                     break;
-                case "Alchemist": 
+                case "Alchemist":
                     num = 1;
                     break;
-                case "Ancient Apparition": 
+                case "Ancient Apparition":
                     num = 2;
                     break;
-                case "Anti-Mage": 
+                case "Anti-Mage":
                     num = 3;
                     break;
-                case "Arc Warden": 
+                case "Arc Warden":
                     num = 4;
                     break;
-                case "Axe": 
+                case "Axe":
                     num = 5;
                     break;
-                case "Bane": 
+                case "Bane":
                     num = 6;
                     break;
-                case "Batrider": 
+                case "Batrider":
                     num = 7;
                     break;
-                case "Beastmaster": 
+                case "Beastmaster":
                     num = 8;
                     break;
-                case "Bloodseeker": 
+                case "Bloodseeker":
                     num = 9;
                     break;
-                case "Bounty Hunter": 
+                case "Bounty Hunter":
                     num = 10;
                     break;
-                case "Brewmaster": 
+                case "Brewmaster":
                     num = 11;
                     break;
-                case "Bristleback": 
+                case "Bristleback":
                     num = 12;
                     break;
-                case "Broodmother": 
+                case "Broodmother":
                     num = 13;
                     break;
-                case "Centaur Warrunner": 
+                case "Centaur Warrunner":
                     num = 14;
                     break;
-                case "ChaosKnight": 
+                case "ChaosKnight":
                     num = 15;
                     break;
-                case "Chen": 
+                case "Chen":
                     num = 16;
                     break;
-                case "Clinkz": 
+                case "Clinkz":
                     num = 17;
                     break;
-                case "Clockwerk": 
+                case "Clockwerk":
                     num = 18;
                     break;
-                case "CrystalMaiden": 
+                case "CrystalMaiden":
                     num = 19;
                     break;
-                case "DarkSeer": 
+                case "DarkSeer":
                     num = 20;
                     break;
-                case "Dark Willow": 
+                case "Dark Willow":
                     num = 21;
                     break;
-                case "Dawnbreaker": 
+                case "Dawnbreaker":
                     num = 22;
                     break;
-                case "Dazzle": 
+                case "Dazzle":
                     num = 23;
                     break;
-                case "DeathProphet": 
+                case "Death Prophet":
                     num = 24;
                     break;
-                case "Disruptor": 
+                case "Disruptor":
                     num = 25;
                     break;
-                case "Doom": 
+                case "Doom":
                     num = 26;
                     break;
-                case "Dragon Knight": 
+                case "Dragon Knight":
                     num = 27;
                     break;
-                case "Drow Ranger": 
+                case "Drow Ranger":
                     num = 28;
                     break;
-                case "Earth Spirit": 
+                case "Earth Spirit":
                     num = 29;
                     break;
-                case "Earthshaker": 
+                case "Earthshaker":
                     num = 30;
                     break;
-                case "Elder Titan": 
+                case "Elder Titan":
                     num = 31;
                     break;
-                case "Ember Spirit": 
+                case "Ember Spirit":
                     num = 32;
                     break;
-                case "Enchantres": 
+                case "Enchantres":
                     num = 33;
                     break;
-                case "Enigma": 
+                case "Enigma":
                     num = 34;
                     break;
-                case "Faceless Void": 
+                case "Faceless Void":
                     num = 35;
                     break;
-                case "Grimstroke": 
+                case "Grimstroke":
                     num = 36;
                     break;
-                case "Gyrocopter": 
+                case "Gyrocopter":
                     num = 37;
                     break;
-                case "Hoodwink": 
+                case "Hoodwink":
                     num = 38;
                     break;
-                case "Huskar": 
+                case "Huskar":
                     num = 39;
                     break;
-                case "Invoker": 
+                case "Invoker":
                     num = 40;
                     break;
-                case "Io": 
+                case "Io":
                     num = 41;
                     break;
-                case "Jakiro": 
+                case "Jakiro":
                     num = 42;
                     break;
-                case "Juggernaut": 
+                case "Juggernaut":
                     num = 43;
                     break;
-                case "Keeper of the Light": 
+                case "Keeper of the Light":
                     num = 44;
                     break;
-                case "Kunkka": 
+                case "Kunkka":
                     num = 45;
                     break;
-                case "Legion Commander": 
+                case "Legion Commander":
                     num = 46;
                     break;
-                case "Leshrac": 
+                case "Leshrac":
                     num = 47;
                     break;
-                case "Lich": 
+                case "Lich":
                     num = 48;
                     break;
-                case "Lifestealer": 
+                case "Lifestealer":
                     num = 49;
                     break;
-                case "Lina": 
+                case "Lina":
                     num = 50;
                     break;
-                case "Lion": 
+                case "Lion":
                     num = 51;
                     break;
-                case "LoneDruid": 
+                case "LoneDruid":
                     num = 52;
                     break;
-                case "Luna": 
+                case "Luna":
                     num = 53;
                     break;
-                case "Lycan": 
+                case "Lycan":
                     num = 54;
                     break;
-                case "Magnus": 
+                case "Magnus":
                     num = 55;
                     break;
-                case "Marci": 
+                case "Marci":
                     num = 56;
                     break;
-                case "Mars": 
+                case "Mars":
                     num = 57;
                     break;
-                case "Medusa": 
+                case "Medusa":
                     num = 58;
                     break;
-                case "Meepo": 
+                case "Meepo":
                     num = 59;
                     break;
-                case "Mirana": 
+                case "Mirana":
                     num = 60;
                     break;
-                case "Monkey King": 
+                case "Monkey King":
                     num = 61;
                     break;
-                case "Morphling": 
+                case "Morphling":
                     num = 62;
                     break;
-                case "Naga Siren": 
+                case "Naga Siren":
                     num = 63;
                     break;
-                case "Nature`s Prophet": 
+                case "Nature`s Prophet":
                     num = 64;
                     break;
-                case "Necrophos": 
+                case "Necrophos":
                     num = 65;
                     break;
-                case "Night Stalker": 
+                case "Night Stalker":
                     num = 66;
                     break;
-                case "Nyx Assassin": 
+                case "Nyx Assassin":
                     num = 67;
                     break;
-                case "Ogre Magi": 
+                case "Ogre Magi":
                     num = 68;
                     break;
-                case "Omniknight": 
+                case "Omniknight":
                     num = 69;
                     break;
-                case "Oracle": 
+                case "Oracle":
                     num = 70;
                     break;
-                case "Outworld Devourer": 
+                case "Outworld Devourer":
                     num = 71;
                     break;
-                case "Pangolier": 
+                case "Pangolier":
                     num = 72;
                     break;
-                case "Phantom Assassin": 
+                case "Phantom Assassin":
                     num = 73;
                     break;
-                case "Phantom Lancer": 
+                case "Phantom Lancer":
                     num = 74;
                     break;
-                case "Phoenix": 
+                case "Phoenix":
                     num = 75;
                     break;
-                case "Primal Beast": 
+                case "Primal Beast":
                     num = 76;
                     break;
-                case "Puck": 
+                case "Puck":
                     num = 77;
                     break;
-                case "Pudge": 
+                case "Pudge":
                     num = 78;
                     break;
-                case "Pugna": 
+                case "Pugna":
                     num = 79;
                     break;
-                case "Queen of Pain": 
+                case "Queen of Pain":
                     num = 80;
                     break;
-                case "Razzor": 
+                case "Razzor":
                     num = 81;
                     break;
-                case "Riki": 
+                case "Riki":
                     num = 82;
                     break;
-                case "Rubick": 
+                case "Rubick":
                     num = 83;
                     break;
-                case "SandKing": 
+                case "Sand King":
                     num = 84;
                     break;
-                case "Shadow Demon": 
+                case "Shadow Demon":
                     num = 85;
                     break;
-                case "Shadow Fiend": 
+                case "Shadow Fiend":
                     num = 86;
                     break;
-                case "Shadow Shaman": 
+                case "Shadow Shaman":
                     num = 87;
                     break;
-                case "Silencer": 
+                case "Silencer":
                     num = 88;
                     break;
-                case "Skywrath Mage": 
+                case "Skywrath Mage":
                     num = 89;
                     break;
-                case "Slardar": 
+                case "Slardar":
                     num = 90;
                     break;
-                case "Slark": 
+                case "Slark":
                     num = 91;
                     break;
-                case "Snapfire": 
+                case "Snapfire":
                     num = 92;
                     break;
-                case "Sniper": 
+                case "Sniper":
                     num = 93;
                     break;
-                case "Spectre": 
+                case "Spectre":
                     num = 94;
                     break;
-                case "SpiritBreaker": 
+                case "SpiritBreaker":
                     num = 95;
                     break;
-                case "Storm Spirit": 
+                case "Storm Spirit":
                     num = 96;
                     break;
-                case "Sven": 
+                case "Sven":
                     num = 97;
                     break;
-                case "Techies": 
+                case "Techies":
                     num = 98;
                     break;
-                case "Templar Assassin": 
+                case "Templar Assassin":
                     num = 99;
                     break;
-                case "Terrorblade": 
+                case "Terrorblade":
                     num = 100;
                     break;
-                case "Tidehunter": 
+                case "Tidehunter":
                     num = 101;
                     break;
-                case "Timbersaw": 
+                case "Timbersaw":
                     num = 102;
                     break;
-                case "Tinker": 
+                case "Tinker":
                     num = 103;
                     break;
-                case "Tiny": 
+                case "Tiny":
                     num = 104;
                     break;
-                case "TreantProtector": 
+                case "TreantProtector":
                     num = 105;
                     break;
-                case "TrollWarlord": 
+                case "TrollWarlord":
                     num = 106;
                     break;
-                case "Tusk": 
+                case "Tusk":
                     num = 107;
                     break;
-                case "Underlord": 
+                case "Underlord":
                     num = 108;
                     break;
-                case "Undying": 
+                case "Undying":
                     num = 109;
                     break;
-                case "Ursa": 
+                case "Ursa":
                     num = 110;
                     break;
-                case "VengefulSpirit": 
+                case "VengefulSpirit":
                     num = 111;
                     break;
-                case "Venomancer": 
+                case "Venomancer":
                     num = 112;
                     break;
-                case "Viper": 
+                case "Viper":
                     num = 113;
                     break;
-                case "Visage": 
+                case "Visage":
                     num = 114;
                     break;
-                case "Void Spirit": 
+                case "Void Spirit":
                     num = 115;
                     break;
-                case "Warlock": 
+                case "Warlock":
                     num = 116;
                     break;
-                case "Weaver": 
+                case "Weaver":
                     num = 117;
                     break;
-                case "Windranger": 
+                case "Windranger":
                     num = 118;
                     break;
-                case "Winter Wyvern": 
+                case "Winter Wyvern":
                     num = 119;
                     break;
-                case "Witch Doctor": 
+                case "Witch Doctor":
                     num = 120;
                     break;
-                case "Wraith King": 
+                case "Wraith King":
                     num = 121;
                     break;
                 case "Zeus":
                     num = 122;
                     break;
             }
+            return num;
+        }
+        private void set_img(string name)
+        {
+            int num = get_num(name);
 
             int y = num / 5;
             int x = num % 5;

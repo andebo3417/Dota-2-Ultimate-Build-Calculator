@@ -14,6 +14,12 @@ namespace Dota_2_Ultimate_Build_Calculator
     {
         private string name;
         private Image img;
+        public static int[] melee = new int[] { 53, 49, 43 };
+        public static int[] ranged = new int[] { 23, 50 };
+        public static int[] magic = new int[] { 17, 20, 33, 34, 38, 46, 48, 54};
+        public static int[] physical = new int[] { 10, 24, 37, 40, 41, 42, 43, 44, 45, 47, 49, 51, 55, 57, 58, 60, 62};
+        public static int[] boots = new int[] { 1, 2, 3, 4, 5, 6 };
+
 
         public Item(string name)
         {
